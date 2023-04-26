@@ -19,7 +19,7 @@ resource "yandex_compute_instance" "vm-1" {
   }
 
   metadata = {
-    ssh-keys = "ubuntu:${file("~/.ssh/hexlet1.pub")}"
+    ssh-keys = "ubuntu:${var.admin_ssh}"
   }
 }
 
@@ -44,7 +44,7 @@ resource "yandex_compute_instance" "vm-2" {
   }
 
   metadata = {
-    ssh-keys = "ubuntu:${file("~/.ssh/hexlet1.pub")}"
+    ssh-keys = "ubuntu:${var.admin_ssh}"
   }
 }
 
