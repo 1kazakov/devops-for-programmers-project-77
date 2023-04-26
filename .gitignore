@@ -1,0 +1,7 @@
+.idea
+local.*
+.env
+.terraform
+*.auto.tfvars
+*.tfstate.backup
+.DS_Store

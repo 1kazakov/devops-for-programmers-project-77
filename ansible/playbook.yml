@@ -1,0 +1,11 @@
+- hosts: all
+
+
+- name: Include copy-vars.yml
+  ansible.builtin.import_playbook: copy-vars.yml
+
+- name: Include prepare.yml
+  ansible.builtin.import_playbook: prepare.yml
+
+- name: Include deploy.yml
+  ansible.builtin.import_playbook: deploy.yml
